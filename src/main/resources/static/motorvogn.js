@@ -1,0 +1,7 @@
+function regBil() {
+
+}
+
+function slettAlle() {
+
+}
