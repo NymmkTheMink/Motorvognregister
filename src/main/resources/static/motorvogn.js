@@ -22,6 +22,12 @@ function regBil() {
 
 }
 
+function hentAlle() {
+    $.get( "/hentAlle", function( data ) {
+        formaterData(data);
+    });
+}
+
 function slettAlle() {
 
 }
