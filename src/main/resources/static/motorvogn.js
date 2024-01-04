@@ -40,5 +40,7 @@ function formaterData(biler){
 }
 
 function slettAlle() {
-
+    $.get( "/slettAlle", function( data ) {
+        hentAlle();
+    });
 }
