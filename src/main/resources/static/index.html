@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Motorvognregister</title>
+  <link rel="stylesheet" href="Style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <h1>Motorvognregister</h1>
+  <form>
+    <div id="tre">
+      <div class="inputBox">
+      <label for="persNum">Eiers personnummer: </label><br>
+      <input type="text" id="persNum" name="persNum" placeholder="000000 00000">
+      </div>
+
+      <div class="inputBox">
+      <label for="navn">Eiers navn: </label><br>
+      <input type="text" id="navn" name="navn" placeholder="Jane Doe">
+      </div>
+
+      <div class="inputBox">
+      <label for="adresse">Eiers adresse: </label><br>
+      <input type="text" id="adresse" name="adresse" placeholder="Osloveien 5 ,0370 Oslo">
+      </div>
+    </div>
+
+    <div id="seks">
+      <div class="inputBox">
+      <label for="kjennetegn">Kjennetegn: </label><br>
+      <input type="text" id="kjennetegn" name="kjennetegn" placeholder="DR23523">
+      </div>
+
+      <div class="inputBox">
+      <label for="bilmerke">Bilmerke: </label><br>
+      <input type="text" id="bilmerke" name="bilmerke" placeholder="Skoda">
+      </div>
+
+      <div class="inputBox">
+      <label for="biltype">Biltype: </label><br>
+      <input type="text" id="biltype" name="biltype" placeholder="Octavia">
+      </div>
+    </div>
+  </form>
+  <button onclick="regBil()">Registrer</button>
+  <h2>Alle bilene: </h2>
+  <div id="bilene"></div>
+  <button onclick="slettAlle()">Slett alle</button>
+  <script src="motorvogn.js"></script>
+</body>
+</html>

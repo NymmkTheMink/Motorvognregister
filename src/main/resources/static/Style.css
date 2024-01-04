@@ -1,0 +1,21 @@
+#tre {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#seks {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.inputBox {
+    margin-right: 1%;
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
