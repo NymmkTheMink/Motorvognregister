@@ -1,5 +1,6 @@
 function regBil() {
 
+
 }
 
 function slettAlle() {
