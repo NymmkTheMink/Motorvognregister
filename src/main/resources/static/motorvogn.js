@@ -28,6 +28,17 @@ function hentAlle() {
     });
 }
 
+function formaterData(biler){
+    var ut = "<table>" +
+        "<tr>" +
+        "<th>Eiers personnummer</th><th>Eiers navn</th> <th>Eiers adresse</th><th>Kjennetegn</th><th>Bilmerke</th><th>Biltype</th>" +
+        "</tr>";
+    for(let i in biler ){
+        ut+="<tr><td>"+biler[i].persNum+"</td><td>"+biler[i].navn+"</td><td>"+biler[i].adresse+"</td><td>"+biler[i].kjennetegn+"</td><td>"+biler[i].bilmerke+"</td><td>"+biler[i].biltype+"</td></tr>"
+    }
+    $("#bilene").html(ut);
+}
+
 function slettAlle() {
 
 }
