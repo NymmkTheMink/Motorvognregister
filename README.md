@@ -90,7 +90,7 @@ Alle brukerne klarte å bruke siden og skjønte hva den var til. Likevel dukket 
 Andre ting brukerne savnet var muligheten til å slette individuelle motorvogner og mulighet til å søke i registeret. 
 
 # Litteraturliste
-[W3 Schools](https://www.w3schools.com/)
-[ChatGPT 3.5](https://chat.openai.com/)
+- [W3 Schools](https://www.w3schools.com/)
+- [ChatGPT 3.5](https://chat.openai.com/)
 
 
