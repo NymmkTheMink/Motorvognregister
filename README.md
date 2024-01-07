@@ -89,3 +89,6 @@ Alle brukerne klarte å bruke siden og skjønte hva den var til. Likevel dukket 
 
 Andre ting brukerne savnet var muligheten til å slette individuelle motorvogner og mulighet til å søke i registeret. 
 
+# Kilder
+I arbeidet med dette prosjektet har jeg brukt W3School.com og ChatGPT for å lære meg det jeg trengte for skrive koden for motorvognregisteret. 
+
