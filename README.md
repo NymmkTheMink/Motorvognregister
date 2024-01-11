@@ -92,7 +92,7 @@ Alle brukerne klarte å bruke siden og skjønte hva den var til. Likevel dukket 
 Andre ting brukerne savnet var muligheten til å slette individuelle motorvogner og mulighet til å søke i registeret. 
 
 # Implementering av brukertest
-Jeg valgte å forbedre det grafiske brukergrensesnittet siden, det var det mest etterspurte forbedringen.
+Jeg valgte å forbedre det grafiske brukergrensesnittet siden, det var den mest etterspurte forbedringen.
 
 # Litteraturliste
 - [W3 Schools](https://www.w3schools.com/)
