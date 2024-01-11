@@ -1,5 +1,7 @@
 # Mål: Utvikle et omfattende register for motorvogner, med fokus på brukervennlighet og effektivitet
 
+![image](https://github.com/NymmkTheMink/Motorvognregister/assets/141179443/105718b0-5153-4324-9005-2b3f8939a105)
+
 ## Kjernefunksjoner
 
 ### Lagring av Motorvogner
