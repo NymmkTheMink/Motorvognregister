@@ -1,5 +1,7 @@
 # Mål: Utvikle et omfattende register for motorvogner, med fokus på brukervennlighet og effektivitet
 
+![image](https://github.com/NymmkTheMink/Motorvognregister/assets/141179443/105718b0-5153-4324-9005-2b3f8939a105)
+
 ## Kjernefunksjoner
 
 ### Lagring av Motorvogner
@@ -88,6 +90,9 @@ Bruker 3, er en gutt på 17 år. Har mye kunnskap om teknologi og hvordan det ut
 Alle brukerne klarte å bruke siden og skjønte hva den var til. Likevel dukket det opp forslag til forbedringer. To brukere påpekte at siden var veldig enkelt utformet og litt kjedelig å se på. Det kunne vært lurt å legge litt arbeid i utformingen av det grafiske brukergrensesnittet. 
 
 Andre ting brukerne savnet var muligheten til å slette individuelle motorvogner og mulighet til å søke i registeret. 
+
+# Implementering av brukertest
+Jeg valgte å forbedre det grafiske brukergrensesnittet siden, det var den mest etterspurte forbedringen.
 
 # Litteraturliste
 - [W3 Schools](https://www.w3schools.com/)
