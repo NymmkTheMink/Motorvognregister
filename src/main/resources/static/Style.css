@@ -12,10 +12,46 @@
     margin-bottom: 1%;
 }
 
+form {
+    background-color: lightsteelblue;
+    width: fit-content;
+}
+
+form, input{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    padding-right: 15px;
+}
+
 .inputBox {
     margin-right: 1%;
 }
 
+table, th, td {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+table {
+    background-color: lightsteelblue;
+}
+
+th{
+    background-color: white;
+}
+
 tr:nth-child(even) {
     background-color: lightgray;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+button {
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
 }
