@@ -41,7 +41,7 @@ function hentAlle() {
 }
 
 function formaterData(biler){
-    var ut = "<table>" +
+    var ut = "<table>" + "<caption>Alle Bilene</caption>" +
         "<tr>" +
         "<th>Eiers personnummer</th><th>Eiers navn</th> <th>Eiers adresse</th><th>Kjennetegn</th><th>Bilmerke</th><th>Biltype</th>" +
         "</tr>";

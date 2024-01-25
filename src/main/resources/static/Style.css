@@ -17,16 +17,24 @@ form {
     width: fit-content;
 }
 
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    margin: 5px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.50);
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
 form, input{
     border: 2px solid black;
     border-radius: 10px;
-    padding: 5px;
-    padding-right: 15px;
+    padding: 10px;
 }
 
-.inputBox {
-    margin-right: 1%;
-}
 
 table, th, td {
     border: 2px solid black;
@@ -43,7 +51,7 @@ th{
 }
 
 tr:nth-child(even) {
-    background-color: lightgray;
+    background-color: #e0dfdf;
 }
 
 tr:nth-child(odd) {
@@ -54,4 +62,15 @@ button {
     border-radius: 10px;
     margin-top: 10px;
     margin-left: 5px;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+
+h1 {
+    text-align: center;
 }

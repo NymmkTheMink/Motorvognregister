@@ -8,45 +8,51 @@
 </head>
 <body onload="formaterData()">
   <h1>Motorvognregister</h1>
-  <form>
-    <div id="tre">
-      <div class="inputBox">
-      <label for="persNum">Eiers personnummer: </label><br>
-      <input type="text" id="persNum" name="persNum" placeholder="000000 00000">
+  <div id="container">
+    <div>
+    <form>
+      <div id="tre">
+        <div class="inputBox">
+        <label for="persNum"><b>Eiers personnummer</b></label><br>
+        <input type="text" id="persNum" name="persNum" placeholder="000000 00000">
+        </div>
+
+        <div class="inputBox">
+        <label for="navn"><b>Eiers navn</b></label><br>
+        <input type="text" id="navn" name="navn" placeholder="Jane Doe">
+        </div>
+
+        <div class="inputBox">
+        <label for="adresse"><b>Eiers adresse</b></label><br>
+        <input type="text" id="adresse" name="adresse" placeholder="Osloveien 5 ,0370 Oslo">
+        </div>
       </div>
 
-      <div class="inputBox">
-      <label for="navn">Eiers navn: </label><br>
-      <input type="text" id="navn" name="navn" placeholder="Jane Doe">
-      </div>
+      <div id="seks">
+        <div class="inputBox">
+        <label for="kjennetegn"><b>Kjennetegn</b></label><br>
+        <input type="text" id="kjennetegn" name="kjennetegn" placeholder="DR23523">
+        </div>
 
-      <div class="inputBox">
-      <label for="adresse">Eiers adresse: </label><br>
-      <input type="text" id="adresse" name="adresse" placeholder="Osloveien 5 ,0370 Oslo">
+        <div class="inputBox">
+        <label for="bilmerke"><b>Bilmerke</b></label><br>
+        <input type="text" id="bilmerke" name="bilmerke" placeholder="Skoda">
+        </div>
+
+        <div class="inputBox">
+        <label for="biltype"><b>Biltype</b></label><br>
+        <input type="text" id="biltype" name="biltype" placeholder="Octavia">
+        </div>
       </div>
+    </form>
+    <button onclick="regBil()">Registrer</button>
     </div>
-
-    <div id="seks">
-      <div class="inputBox">
-      <label for="kjennetegn">Kjennetegn: </label><br>
-      <input type="text" id="kjennetegn" name="kjennetegn" placeholder="DR23523">
-      </div>
-
-      <div class="inputBox">
-      <label for="bilmerke">Bilmerke: </label><br>
-      <input type="text" id="bilmerke" name="bilmerke" placeholder="Skoda">
-      </div>
-
-      <div class="inputBox">
-      <label for="biltype">Biltype: </label><br>
-      <input type="text" id="biltype" name="biltype" placeholder="Octavia">
-      </div>
+    <div>
+    <h2>Alle bilene: </h2>
+    <div id="bilene"></div>
+    <button onclick="slettAlle()">Slett alle</button>
     </div>
-  </form>
-  <button onclick="regBil()">Registrer</button>
-  <h2>Alle bilene: </h2>
-  <div id="bilene"></div>
-  <button onclick="slettAlle()">Slett alle</button>
+  </div>
   <script src="motorvogn.js"></script>
 </body>
 </html>
