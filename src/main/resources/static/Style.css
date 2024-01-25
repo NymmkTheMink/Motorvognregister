@@ -13,7 +13,7 @@
 }
 
 form {
-    background-color: lightsteelblue;
+    background-color: #696D7D;
     width: fit-content;
 }
 
@@ -24,38 +24,44 @@ form {
     gap: 0px;
     margin: 5px;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.50);
+    background-color: #D8E2EF;
     border-radius: 10px;
     border: 2px solid black;
 }
 
 form, input{
+    font-size: medium;
     border: 2px solid black;
     border-radius: 10px;
     padding: 10px;
 }
 
-
 table, th, td {
     border: 2px solid black;
     border-radius: 10px;
-    padding: 5px;
+    padding: 10px;
+    margin: 5px;
 }
 
 table {
-    background-color: lightsteelblue;
+    background-color: #696D7D;
+    font-size: medium;
 }
 
 th{
-    background-color: white;
+    background-color: #D8E2EF;
+}
+
+tr {
+    margin: 10 px
 }
 
 tr:nth-child(even) {
-    background-color: #e0dfdf;
+    background-color: white;
 }
 
 tr:nth-child(odd) {
-    background-color: white;
+    background-color: #D8E2EF;
 }
 
 button {
@@ -67,10 +73,14 @@ button {
 #container {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: flex-start;
     justify-content: space-evenly;
 }
 
 h1 {
+    text-align: center;
+}
+
+h2 {
     text-align: center;
 }
