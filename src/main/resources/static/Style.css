@@ -52,10 +52,6 @@ th{
     background-color: #D8E2EF;
 }
 
-tr {
-    margin: 10 px
-}
-
 tr:nth-child(even) {
     background-color: white;
 }
@@ -78,9 +74,27 @@ button {
 }
 
 h1 {
+    font-size: 48px;
     text-align: center;
 }
 
 h2 {
     text-align: center;
+}
+
+img {
+    width: 5%;
+}
+
+.imageFlipped {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
 }
