@@ -1,3 +1,7 @@
+html {
+    font-family: "Comic Sans MS", arial;
+}
+
 #tre {
     display: flex;
     flex-direction: row;
@@ -63,6 +67,10 @@ tr:nth-child(odd) {
 button {
     border-radius: 10px;
     margin-top: 10px;
+    font-size: large;
+}
+
+#slettAlle {
     margin-left: 5px;
 }
 
