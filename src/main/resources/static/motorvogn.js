@@ -10,7 +10,7 @@ function regBil() {
             persNum : $("#persNum").val(),
             navn : $("#navn").val(),
             adresse : $("#adresse").val(),
-            kjennetegn : $("#kjennetegn").val(),
+            kjennetegn :$("#kjennetegn").val(),
             bilmerke : $("#valgtBilMerke").val(),
             biltype : $("#valgtBilType").val()
         }
@@ -40,27 +40,34 @@ $(function(){ // kjøres når dokumentet er ferdig lastet
 function hentAlleBiler() {
     $.get("/hentBiler", function( biler ) {
         formaterMerke(biler);
-        formaterTyper(biler);
+        updateBilType();
     });
 }
 
 
 function formaterMerke(biler){
-    let ut = "<select id='valgtBilMerke'>";
-    for(const bil of biler ){
-        ut+="<option value='"+bil.modell+"'>"+bil.merke+"</option>";
+    let uniqueMerke = [...new Set(biler.map(bil => bil.merke))];
+    let ut = "<select id='valgtBilMerke' onchange='updateBilType()'>";
+    for(const merke of uniqueMerke){
+        ut+="<option value='"+merke+"'>"+merke+"</option>";
     }
     ut+="</select>";
     $("#bilmerke").html(ut);
 }
 
-function formaterTyper(biler){
-    let ut = "<select id='valgtBilType'>";
-    for(const bil of biler ){
-        ut+="<option value='"+bil.merke+"'>"+bil.modell+"</option>";
-    }
-    ut+="</select>";
-    $("#biltype").html(ut);
+
+function updateBilType(){
+    const selectedMerke = $("#valgtBilMerke").val();
+    $.get("/hentBiler", function( biler ) {
+        let ut = "<select id='valgtBilType'>";
+        for(const bil of biler ){
+            if(bil.merke === selectedMerke){
+                ut+="<option value='"+bil.modell+"'>"+bil.modell+"</option>";
+            }
+        }
+        ut+="</select>";
+        $("#biltype").html(ut);
+    });
 }
 
 
