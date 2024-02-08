@@ -12,6 +12,16 @@ public class MotorvognController {
 
     @GetMapping("/lagre")
     public void lagreMotorvogn(Motorvogn innMotorvogn) { alleBiler.add(innMotorvogn);}
+
+    @GetMapping("hentBiler")
+    public List<Bil> hentBiler() {
+        List<Bil> listBiler = new ArrayList<>();
+        listBiler.add(new Bil("Audi", "A4"));
+        listBiler.add(new Bil("Volvo", "T8"));
+        listBiler.add(new Bil("Audi", "A8"));
+        return listBiler;
+    }
+
     @GetMapping("/hentAlle")
     public List<Motorvogn> hentAlle(){
         return alleBiler;
