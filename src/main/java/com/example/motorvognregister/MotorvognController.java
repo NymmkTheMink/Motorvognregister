@@ -1,5 +1,6 @@
 package com.example.motorvognregister;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -8,10 +9,12 @@ import java.util.List;
 
 @RestController
 public class MotorvognController {
-    public final List<Motorvogn> alleBiler = new ArrayList<>();
+
+    @Autowired
+    MotorvognRepository rep;
 
     @GetMapping("/lagre")
-    public void lagreMotorvogn(Motorvogn innMotorvogn) { alleBiler.add(innMotorvogn);}
+    public void lagreMotorvogn(Motorvogn innMotorvogn) { rep.lagreMotorvogn(innMotorvogn);}
 
     @GetMapping("hentBiler")
     public List<Bil> hentBiler() {
@@ -24,11 +27,11 @@ public class MotorvognController {
 
     @GetMapping("/hentAlle")
     public List<Motorvogn> hentAlle(){
-        return alleBiler;
+        return rep.hentAlleMotorvogner();
     }
 
     @GetMapping("/slettAlle")
     public void slettAlle(){
-        alleBiler.clear();
+        rep.slettAlleMotovogner();
     }
 }
